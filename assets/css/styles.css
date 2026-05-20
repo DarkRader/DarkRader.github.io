@@ -94,6 +94,7 @@ body.dark-theme {
     color: var(--title-color);
     margin-right: var(--mb-1);
     cursor: pointer;
+    transition: .3s;
 }
 
 .change-theme:hover {

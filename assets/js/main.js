@@ -163,7 +163,7 @@ window.addEventListener('scroll', scrollUp)
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+const iconTheme = 'uil-sun' // This was used as a single toggle, but we need both classes
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -171,24 +171,42 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+const getCurrentIcon = () => themeButton.classList.contains('uil-sun') ? 'uil-sun' : 'uil-moon'
 
-// We validate if the user previously chose a topic, otherwise default to dark
+// We validate if the user previously chose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+  
+  // Set the correct icon based on the theme
+  if (selectedTheme === 'dark') {
+      themeButton.classList.add('uil-sun')
+      themeButton.classList.remove('uil-moon')
+  } else {
+      themeButton.classList.add('uil-moon')
+      themeButton.classList.remove('uil-sun')
+  }
 } else {
-    // Default to dark theme
+    // Default to dark theme with sun icon
     document.body.classList.add(darkTheme)
-    themeButton.classList.add(iconTheme)
+    themeButton.classList.add('uil-sun')
+    themeButton.classList.remove('uil-moon')
 }
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
+    
+    // Toggle between sun and moon icons
+    if (document.body.classList.contains(darkTheme)) {
+        themeButton.classList.add('uil-sun')
+        themeButton.classList.remove('uil-moon')
+    } else {
+        themeButton.classList.add('uil-moon')
+        themeButton.classList.remove('uil-sun')
+    }
+    
     // We save the theme and the current icon that the user has chosen
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())

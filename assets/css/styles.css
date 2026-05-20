@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 250; /* Purple 250 */
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -80,6 +80,7 @@ body.dark-theme {
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    --first-color-lighter: hsl(var(--hue-color), 29%, 20%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -477,56 +478,41 @@ img {
 }
 
 .skills__list {
-    row-gap: 1.5rem;
-    padding-left: 2.7rem;
-}
-
-.skills__titles {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--mb-0-5);
+    flex-wrap: wrap;
+    gap: .75rem;
+    padding-left: 2.7rem;
+    transition: .3s;
 }
 
-.skills__name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage {
-    height: 5px;
-    border-radius: .25rem;
-}
-
-.skills__bar {
+.skills__data {
     background-color: var(--first-color-lighter);
+    color: var(--first-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    transition: .3s;
+    cursor: default;
 }
 
-.skills__percentage {
-    display: block;
+.skills__data:hover {
     background-color: var(--first-color);
+    color: #fff;
+    transform: translateY(-2px);
 }
-
-.skills__html { width: 90%; }
-.skills__css { width: 80%; }
-.skills__js { width: 60%; }
-.skills__react { width: 85%; }
-.skills__php { width: 80%; }
-.skills__node { width: 70%; }
-.skills__firebase { width: 90%; }
-.skills__python { width: 55%; }
-.skills__figma { width: 90%; }
-.skills__sketch { width: 85%; }
-.skills__photoshop { width: 85%; }
 
 .skills__close .skills__list {
     height: 0;
     overflow: hidden;
+    margin-bottom: 0;
+    opacity: 0;
 }
 
 .skills__open .skills__list {
     height: max-content;
     margin-bottom: var(--mb-2-5);
+    opacity: 1;
 }
 
 .skills__open .skills__arrow {
@@ -1068,6 +1054,7 @@ img {
 
     .about__container,
     .skills__container,
+    .services__container,
     .portfolio__content,
     .project__container,
     .contact__container,
@@ -1272,7 +1259,8 @@ img {
     }
 
     .services__container {
-        grid-template-columns: repeat(3, 160px);
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
     }
 
     .portfolio__content {

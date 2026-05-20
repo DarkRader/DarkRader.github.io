@@ -40,6 +40,11 @@
                             </a>
                         </li>
                         <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#portfolio" class="nav__link">
                                 <i class="uil uil-scenery nav__icon"></i> Projects
                             </a>
@@ -92,7 +97,7 @@
                                     130.807 187.559 100.226 186.353C69.6454 185.147 41.0285 160.724 21.0103 131.144C1.0063 
                                     101.565 -10.3994 66.8291 4.23231 41.3323C18.864 15.8355 59.5307 0.42065 92.5152 0.0441315C125.492 
                                     -0.332387 174.032 10.8571 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/artem.jpeg"/>
+                                    <image class="home__blob-img" x="0" y="0" width="200" height="200" preserveAspectRatio="xMidYMid slice" href="assets/img/artem.jpeg"/>
                                 </g>
                             </svg>
                         </div>
@@ -167,7 +172,7 @@
                         <!--==================== SKILLS 1 ====================-->
                         <div class="skills__content skills__open">
                             <div class="skills__header">
-                                <i class="uil uil-bracket-curly skills__icon"></i>
+                                <i class="uil uil-brackets-curly skills__icon"></i>
                                 <div>
                                     <h1 class="skills__title">Development</h1>
                                     <span class="skills__subtitle">Languages & Frameworks</span>
@@ -175,39 +180,43 @@
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Python (FastAPI)</h3>
-                                        <span class="skills__number">95%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 95%;"></span></div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Kotlin / Java (Spring)</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 85%;"></span></div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">C / C++</h3>
-                                        <span class="skills__number">75%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 75%;"></span></div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Swift / SwiftUI</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 70%;"></span></div>
-                                </div>
+                            <div class="skills__list">
+                                <span class="skills__data">Python</span>
+                                <span class="skills__data">Kotlin</span>
+                                <span class="skills__data">Java</span>
+                                <span class="skills__data">FastAPI</span>
+                                <span class="skills__data">Spring Boot</span>
+                                <span class="skills__data">Swift / SwiftUI</span>
+                                <span class="skills__data">C / C++</span>
+                                <span class="skills__data">Jetpack Compose</span>
+                                <span class="skills__data">HTML / CSS</span>
+                                <span class="skills__data">JavaScript</span>
                             </div>
                         </div>
 
                         <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-database skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Data & Storage</h1>
+                                    <span class="skills__subtitle">Databases & State</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list">
+                                <span class="skills__data">PostgreSQL</span>
+                                <span class="skills__data">SQLite</span>
+                                <span class="skills__data">MongoDB</span>
+                                <span class="skills__data">Redis</span>
+                                <span class="skills__data">RoomDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 3 ====================-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-server-network skills__icon"></i>
@@ -218,59 +227,39 @@
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Docker & Kubernetes</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 90%;"></span></div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">IaC (Pulumi / Terraform)</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 80%;"></span></div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">CI/CD (ArgoCD / Gitlab)</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 85%;"></span></div>
-                                </div>
+                            <div class="skills__list">
+                                <span class="skills__data">Docker</span>
+                                <span class="skills__data">Kubernetes</span>
+                                <span class="skills__data">Pulumi</span>
+                                <span class="skills__data">Terraform</span>
+                                <span class="skills__data">Google Cloud (GCP)</span>
+                                <span class="skills__data">ArgoCD</span>
+                                <span class="skills__data">Proxmox</span>
+                                <span class="skills__data">Dapr</span>
                             </div>
                         </div>
-                    </div>
 
-                    <div>
-                        <!--==================== SKILLS 3 ====================-->
+                        <!--==================== SKILLS 4 ====================-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
-                                <i class="uil uil-database skills__icon"></i>
+                                <i class="uil uil-setting skills__icon"></i>
                                 <div>
-                                    <h1 class="skills__title">Data & Tools</h1>
-                                    <span class="skills__subtitle">Storage & Observability</span>
+                                    <h1 class="skills__title">Systems & Tools</h1>
+                                    <span class="skills__subtitle">OS, SSO & Monitoring</span>
                                 </div>
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Postgres / Redis / MongoDB</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 85%;"></span></div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Grafana / Prometheus</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar"><span class="skills__percentage" style="width: 80%;"></span></div>
-                                </div>
+                            <div class="skills__list">
+                                <span class="skills__data">Linux (Ubuntu/Debian)</span>
+                                <span class="skills__data">macOS</span>
+                                <span class="skills__data">Git / GitHub / GitLab</span>
+                                <span class="skills__data">Grafana</span>
+                                <span class="skills__data">Prometheus</span>
+                                <span class="skills__data">OpenTelemetry</span>
+                                <span class="skills__data">Keycloak</span>
+                                <span class="skills__data">Authentik</span>
+                                <span class="skills__data">Zed / VS Code / JetBrains</span>
                             </div>
                         </div>
                     </div>
@@ -328,6 +317,116 @@
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I offer</span>
+
+                <div class="services__container container grid">
+                    <!--==================== SERVICE 1 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-server services__icon"></i>
+                            <h3 class="services__title">Backend <br> Development</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Backend <br> Development</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Developing scalable REST & gRPC APIs.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Designing robust and optimized database schemas.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Implementing clean architecture and microservices.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICE 2 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-cloud-database-tree services__icon"></i>
+                            <h3 class="services__title">DevOps & <br> Infrastructure</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">DevOps & <br> Infrastructure</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Setting up CI/CD pipelines with GitLab and GitHub Actions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Managing Kubernetes clusters and containerized apps.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Implementing Infrastructure as Code (IaC).</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SERVICE 3 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-chart-line services__icon"></i>
+                            <h3 class="services__title">Observability <br> & Performance</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Observability <br> & Performance</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Setting up Grafana & Prometheus monitoring.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Logging aggregation and distributed tracing.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>System performance analysis and optimization.</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

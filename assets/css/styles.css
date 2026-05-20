@@ -576,6 +576,15 @@ img {
     margin-bottom: var(--mb-1);
 }
 
+.qualification__link {
+    color: var(--text-color);
+    transition: .3s;
+}
+
+.qualification__link:hover {
+    color: var(--first-color);
+}
+
 .qualification__calendar {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);

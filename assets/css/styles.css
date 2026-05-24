@@ -297,13 +297,16 @@ img {
     color: var(--first-color-alt);
 }
 
+.home__img {
+    transform: translateY(-50px);
+}
+
 .home__blob {
     width: 200px;
-    fill: var(--first-color);
 }
 
 .home__blob-img {
-    width: 170px;
+    width: 100%;
 }
 
 .home__data {

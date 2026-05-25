@@ -16,8 +16,8 @@
         <!--==================== FAVICON ====================-->
         <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
-        <title>Artem Kuznetsov | Backend & DevOps Engineer</title>
-        <meta name="description" content="Personal portfolio of Artem Kuznetsov, a Backend Engineer and DevOps enthusiast based in Prague. Focused on clean architecture and automation.">
+        <title>Artem Kuznetsov | Software & DevOps Engineer</title>
+        <meta name="description" content="Personal portfolio of Artem Kuznetsov, a Software Engineer and DevOps enthusiast based in Prague. Focused on clean architecture and automation.">
     </head>
     <body class="dark-theme">
         <!--==================== HEADER ====================-->
@@ -107,7 +107,7 @@
 
                         <div class="home__data">
                             <h1 class="home__title">Artem Kuznetsov</h1>
-                            <h3 class="home__subtitle">DevOps & Backend Engineer</h3>
+                            <h3 class="home__subtitle">DevOps & Software Engineer</h3>
                             <p class="home__description">Working on automated infrastructure and backend systems. Focused on Cloud-Native tools, CI/CD pipelines, and building reliable software.</p>
                             <a href="#contact" class="button button--flex">
                                 Contact Me <i class="uil uil-message button__icon"></i>
@@ -465,42 +465,66 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Featured Projects</h2>
-                <span class="section__subtitle">Selected works from GitHub</span>
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span>
 
                 <div class="portfolio__container container swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <!--==================== PROJECT 1 ====================-->
+                        <!--==================== PROJECT 1: Reservium ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/reservium.jpeg" alt="Reservium Project" class="portfolio__img">
+                            <img src="assets/img/projects/reservium/reservium.jpeg" alt="Reservium" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Reservium API</h3>
-                                <p class="portfolio__description">Asynchronous Python backend built with <b>FastAPI</b> and <b>PostgreSQL</b> for complex facility reservations. Features <b>Keycloak</b> OIDC security, real-time <b>Google Calendar</b> synchronization, and automated CI/CD.</p>
+                                <p class="portfolio__description">Open-source microservice-oriented platform for managing shared spaces. Streamlines organizational bookings with visual calendars, Keycloak SSO, and automated Google Calendar sync.</p>
+                                
+                                <div class="portfolio__badges">
+                                    <span class="portfolio__badge">Python</span>
+                                    <span class="portfolio__badge">FastAPI</span>
+                                    <span class="portfolio__badge">PostgreSQL</span>
+                                    <span class="portfolio__badge">OIDC</span>
+                                </div>
+
                                 <a href="https://docs.reservium.cloudrader.com" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Documentation <i class="uil uil-arrow-right button__icon"></i>
+                                    Documentation <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <!--==================== PROJECT 2 ====================-->
+                        <!--==================== PROJECT 2: Inventarium ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Inventarium API</h3>
+                                <p class="portfolio__description">Scalable multi-tenant inventory platform (In Development). Leveraging a reactive-first approach with Kotlin Coroutines and Spring WebFlux, with a strong focus on system observability and R2DBC connectivity.</p>
+                                
+                                <div class="portfolio__badges">
+                                    <span class="portfolio__badge">Kotlin</span>
+                                    <span class="portfolio__badge">Spring Boot</span>
+                                    <span class="portfolio__badge">WebFlux</span>
+                                    <span class="portfolio__badge">PostgreSQL</span>
+                                </div>
+
+                                <a href="https://github.com/DarkRader" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Code <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PROJECT 3: University ====================-->
                         <div class="portfolio__content grid swiper-slide">
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">University Archive</h3>
-                                <p class="portfolio__description">Comprehensive collection of projects from FIT CTU, covering Algorithms, Operating Systems, and Networking in C++ and Java.</p>
-                                <a href="https://github.com/DarkRader/University" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Repository <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
+                                <p class="portfolio__description">Academic archive from FIT CTU. Includes advanced implementations of Operating Systems, Networking protocols, and Complex Algorithms.</p>
+                                
+                                <div class="portfolio__badges">
+                                    <span class="portfolio__badge">C++</span>
+                                    <span class="portfolio__badge">Java</span>
+                                    <span class="portfolio__badge">Algorithms</span>
+                                    <span class="portfolio__badge">Linux</span>
+                                </div>
 
-                        <!--==================== PROJECT 3 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Infrastructure Templates</h3>
-                                <p class="portfolio__description">Ready-to-use DevOps templates for Kubernetes deployments, Pulumi IaC, and monitoring setups with Grafana.</p>
-                                <a href="https://github.com/DarkRader" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Repository <i class="uil uil-arrow-right button__icon"></i>
+                                <a href="https://github.com/DarkRader/University" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Archive <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>

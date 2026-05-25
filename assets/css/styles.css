@@ -773,9 +773,43 @@ img {
     object-fit: contain;
 }
 
-.swiper-modal-icon {
-    color: #fff;
-    font-size: 2rem;
+.swiper-modal-next,
+.swiper-modal-prev {
+    position: absolute;
+    color: #fff !important;
+    font-size: 2.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    z-index: 2010;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.swiper-modal-next:hover,
+.swiper-modal-prev:hover {
+    background-color: var(--first-color-alt);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.swiper-modal-next {
+    right: 5% !important;
+}
+
+.swiper-modal-prev {
+    left: 5% !important;
+}
+
+.swiper-modal-next::after,
+.swiper-modal-prev::after {
+    display: none;
 }
 
 .portfolio__modal-close {

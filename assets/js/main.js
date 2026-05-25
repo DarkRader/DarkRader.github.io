@@ -141,11 +141,16 @@ const portfolioModal = document.getElementById("portfolio-modal"),
       portfolioCloseBtn = document.getElementById("modal-close");
 
 let modalSwiper = new Swiper('.modalSwiper', {
-    loop: true,
+    loop: false, // Set to false for easier dynamic indexing
     grabCursor: true,
+    observer: true,
+    observeParents: true,
+    keyboard: {
+        enabled: true,
+    },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-modal-next',
+        prevEl: '.swiper-modal-prev',
     },
 });
 

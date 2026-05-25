@@ -106,6 +106,16 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     },
 });
 
+/*==================== PROJECT IMAGES SWIPER ====================*/
+let swiperProject = new Swiper('.projectSwiper', {
+    loop: true,
+    grabCursor: true,
+    pagination: {
+        el: '.project-pagination',
+        clickable: true,
+    },
+});
+
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true,
@@ -123,6 +133,58 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
         }
     }
 });
+
+/*==================== PORTFOLIO LIGHTBOX GALLERY ====================*/
+const portfolioModal = document.getElementById("portfolio-modal"),
+      modalWrapper = document.getElementById("modal-wrapper"),
+      zoomImgs = document.querySelectorAll(".portfolio__img-zoom"),
+      portfolioCloseBtn = document.getElementById("modal-close");
+
+let modalSwiper = new Swiper('.modalSwiper', {
+    loop: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+zoomImgs.forEach((img) => {
+    img.onclick = function() {
+        // Clear previous slides
+        modalWrapper.innerHTML = '';
+        
+        // Find all images in the same project swiper
+        const projectWrapper = this.closest('.swiper-wrapper');
+        const projectImgs = projectWrapper.querySelectorAll('.portfolio__img');
+        
+        // Add images to modal
+        projectImgs.forEach(projectImg => {
+            const slide = document.createElement('div');
+            slide.classList.add('swiper-slide');
+            slide.innerHTML = `<img src="${projectImg.src}" class="portfolio__modal-img">`;
+            modalWrapper.appendChild(slide);
+        });
+
+        // Show modal first so swiper can calculate dimensions
+        portfolioModal.style.display = "block";
+        
+        // Update swiper and go to clicked image
+        modalSwiper.update();
+        const clickedIndex = Array.from(projectImgs).indexOf(this);
+        modalSwiper.slideTo(clickedIndex, 0);
+    }
+});
+
+portfolioCloseBtn.onclick = function() {
+    portfolioModal.style.display = "none";
+}
+
+portfolioModal.onclick = function(event) {
+    if (event.target == portfolioModal || event.target.classList.contains('swiper-slide')) {
+        portfolioModal.style.display = "none";
+    }
+}
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')

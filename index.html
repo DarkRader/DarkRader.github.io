@@ -472,7 +472,26 @@
                     <div class="swiper-wrapper">
                         <!--==================== PROJECT 1: Reservium ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/projects/reservium/reservium.jpeg" alt="Reservium" class="portfolio__img">
+                            <div class="portfolio__images-container swiper projectSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/projects/reservium/reservium.jpeg" alt="Reservium Summary" class="portfolio__img portfolio__img-zoom">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/projects/reservium/main-page.png" alt="Reservium Main" class="portfolio__img portfolio__img-zoom">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/projects/reservium/dashboard.png" alt="Reservium Dashboard" class="portfolio__img portfolio__img-zoom">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/projects/reservium/manager-panel.png" alt="Reservium Manager" class="portfolio__img portfolio__img-zoom">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/projects/reservium/login-screen.png" alt="Reservium Login" class="portfolio__img portfolio__img-zoom">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination project-pagination"></div>
+                            </div>
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Reservium API</h3>
@@ -631,7 +650,18 @@
         <!--==================== SWIPER JS ====================-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <!--==================== MAIN JS ====================-->
+        <div class="portfolio__modal" id="portfolio-modal">
+            <span class="portfolio__modal-close" id="modal-close">&times;</span>
+            <div class="portfolio__modal-swiper swiper modalSwiper">
+                <div class="swiper-wrapper" id="modal-wrapper">
+                    <!-- Images will be injected here via JS -->
+                </div>
+                <div class="swiper-button-next swiper-modal-icon"><i class="uil uil-angle-right-b"></i></div>
+                <div class="swiper-button-prev swiper-modal-icon"><i class="uil uil-angle-left-b"></i></div>
+            </div>
+        </div>
+
+    <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
     </body>
 </html>

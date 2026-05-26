@@ -135,7 +135,7 @@
 
                     <div class="about__data">
                         <p class="about__description">
-                            Software Engineering graduate from FIT CTU in Prague, currently working as a DevOps Engineer. 
+                            Software Engineering graduate from FIT CTU in Prague, currently working as a DevOps Engineer.
                             I specialize in building scalable backend systems and robust infrastructure, with a strong focus on automation, Cloud-Native tools, and clean-code practices.
                         </p>
 
@@ -496,7 +496,7 @@
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Reservium API</h3>
                                 <p class="portfolio__description">Open-source microservice-oriented platform for managing shared spaces. Streamlines organizational bookings with visual calendars, Keycloak SSO, and automated Google Calendar sync.</p>
-                                
+
                                 <div class="portfolio__badges">
                                     <span class="portfolio__badge">Python</span>
                                     <span class="portfolio__badge">FastAPI</span>
@@ -512,10 +512,19 @@
 
                         <!--==================== PROJECT 2: Inventarium ====================-->
                         <div class="portfolio__content grid swiper-slide">
+                            <div class="portfolio__images-container swiper projectSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/projects/inventarium/inventarium.png" alt="Inventarium Overview" class="portfolio__img portfolio__img-zoom">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination project-pagination"></div>
+                            </div>
+
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Inventarium API</h3>
                                 <p class="portfolio__description">Scalable multi-tenant inventory platform (In Development). Leveraging a reactive-first approach with Kotlin Coroutines and Spring WebFlux, with a strong focus on system observability and R2DBC connectivity.</p>
-                                
+
                                 <div class="portfolio__badges">
                                     <span class="portfolio__badge">Kotlin</span>
                                     <span class="portfolio__badge">Spring Boot</span>
@@ -523,7 +532,7 @@
                                     <span class="portfolio__badge">PostgreSQL</span>
                                 </div>
 
-                                <a href="https://github.com/DarkRader" target="_blank" class="button button--flex button--small portfolio__button">
+                                <a href="https://github.com/CloudRader/inventarium-api" target="_blank" class="button button--flex button--small portfolio__button">
                                     View Code <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
@@ -531,15 +540,28 @@
 
                         <!--==================== PROJECT 3: University ====================-->
                         <div class="portfolio__content grid swiper-slide">
+                            <div class="portfolio__images-container swiper projectSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/projects/university/university.jpeg" alt="University Archive" class="portfolio__img portfolio__img-zoom">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination project-pagination"></div>
+                            </div>
+
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">University Archive</h3>
-                                <p class="portfolio__description">Academic archive from FIT CTU. Includes advanced implementations of Operating Systems, Networking protocols, and Complex Algorithms.</p>
-                                
+                                <p class="portfolio__description">A comprehensive collection of 20+ academic projects from FIT CTU. Includes work in Operating Systems, Computer Networks, Cryptography, and Algorithms.</p>
+
                                 <div class="portfolio__badges">
                                     <span class="portfolio__badge">C++</span>
+                                    <span class="portfolio__badge">Python</span>
+                                    <span class="portfolio__badge">Swift</span>
                                     <span class="portfolio__badge">Java</span>
+                                    <span class="portfolio__badge">OS</span>
+                                    <span class="portfolio__badge">Networking</span>
+                                    <span class="portfolio__badge">Databases</span>
                                     <span class="portfolio__badge">Algorithms</span>
-                                    <span class="portfolio__badge">Linux</span>
                                 </div>
 
                                 <a href="https://github.com/DarkRader/University" target="_blank" class="button button--flex button--small portfolio__button">
@@ -562,20 +584,30 @@
 
                 <div class="contact__container container grid">
                     <div>
-                        <div class="contact__information">
+                        <a href="mailto:artyom.20century@gmail.com" class="contact__information">
                             <i class="uil uil-envelope contact__icon"></i>
                             <div>
                                 <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">artem.kuznetsov@example.com</span>
+                                <span class="contact__subtitle">artyom.20century@gmail.com</span>
                             </div>
-                        </div>
-                        <div class="contact__information">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/artem-rader/" target="_blank" class="contact__information">
                             <i class="uil uil-linkedin contact__icon"></i>
                             <div>
                                 <h3 class="contact__title">LinkedIn</h3>
                                 <span class="contact__subtitle">artem-rader</span>
                             </div>
-                        </div>
+                        </a>
+
+                        <a href="https://github.com/DarkRader" target="_blank" class="contact__information">
+                            <i class="uil uil-github-alt contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">GitHub</h3>
+                                <span class="contact__subtitle">DarkRader</span>
+                            </div>
+                        </a>
+
                         <div class="contact__information">
                             <i class="uil uil-map-marker contact__icon"></i>
                             <div>

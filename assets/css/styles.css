@@ -954,6 +954,11 @@ img {
 .contact__information {
     display: flex;
     margin-bottom: var(--mb-2);
+    color: inherit;
+}
+
+.contact__information:hover .contact__icon {
+    color: var(--first-color-alt);
 }
 
 .contact__icon {
